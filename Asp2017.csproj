@@ -29,6 +29,9 @@
     <Content Include="Client\tsconfig.server.aot.json" />
     <Content Include="Client\tsconfig.server.json" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\qdms\DataAccess\DataAccess.csproj" />
+  </ItemGroup>
   <Target Name="RunWebpack" AfterTargets="ComputeFilesToPublish">
     <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
     <Exec Command="npm install" />
@@ -45,7 +48,7 @@
   </Target>
   <Target Name="CleanDist" AfterTargets="Clean">
     <ItemGroup>
-      <FilesToDelete Include="Client\dist\**; wwwroot\dist\**"/>
+      <FilesToDelete Include="Client\dist\**; wwwroot\dist\**" />
     </ItemGroup>
     <Delete Files="@(FilesToDelete)" />
     <RemoveDir Directories="Client\dist; wwwroot\dist" />
