@@ -5,6 +5,7 @@
 } from '@angular/core';
 import { IUser } from '../../models/User';
 import { UserService } from '../../shared/user.service';
+import {GridOptions} from 'ag-grid/main';
 
 @Component({
     selector: 'users',

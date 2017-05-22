@@ -37,6 +37,8 @@
     "@ngx-translate/core": "^6.0.1",
     "@ngx-translate/http-loader": "0.0.3",
     "@types/node": "^7.0.12",
+    "ag-grid": "^10.0.0",
+    "ag-grid-angular": "^10.0.0",
     "angular2-template-loader": "0.6.0",
     "aspnet-prerendering": "2.0.3",
     "aspnet-webpack": "^1.0.17",
@@ -64,6 +66,7 @@
     "sass-loader": "^6.0.3",
     "signalr": "^2.2.1",
     "style-loader": "^0.13.1",
+    "tslint": "^4.5.1",
     "to-string-loader": "^1.1.5",
     "typescript": "^2.3.2",
     "url-loader": "^0.5.7",
@@ -81,7 +84,7 @@
     "codelyzer": "^3.0.0-beta.4",
     "jasmine-core": "^2.5.2",
     "jest": "^20.0.0",
-    "jest-preset-angular": "^2.0.1",
-    "tslint": "^4.5.1"
+    "jest-preset-angular": "^2.0.1"
+    
   }
 }

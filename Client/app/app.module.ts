@@ -19,6 +19,10 @@ import { CounterComponent } from './containers/counter/counter.component';
 import { ChatComponent } from './containers/chat/chat.component';
 import { NotFoundComponent } from './containers/not-found/not-found.component';
 import { NgxBootstrapComponent } from './containers/ngx-bootstrap-demo/ngx-bootstrap.component';
+import {FormsModule} from "@angular/forms";
+// ag-grid
+import {AgGridModule} from "ag-grid-angular/main";
+// application
 
 import { LinkService } from './shared/link.service';
 import { UserService } from './shared/user.service';
@@ -51,6 +55,7 @@ export function createTranslateLoader(http: Http, baseHref) {
         CommonModule,
         HttpModule,
         FormsModule,
+        AgGridModule,
         Ng2BootstrapModule.forRoot(), // You could also split this up if you don't want the Entire Module imported
 
         TransferHttpModule, // Our Http TransferData method
